@@ -1,0 +1,37 @@
+$color-lt-yellow: #FFF8D4;
+$color-yellow: #F5DF98;
+$color-lt-orange: #FFB884;
+$color-dk-orange: #CC7236;
+$color-lt-grey: #C0D1C2;
+$color-dk-green: #2E4347;
+
+body{
+	padding-top: 70px;
+}
+
+.jumbotron{
+	color: $color-dk-green;
+	background-color: $color-lt-grey;
+}
+
+.navbar-inverse{
+	background-color: $color-lt-yellow;
+	border: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: $color-dk-orange;
+}
+
+.navbar-inverse .navbar-brand {
+	color: $color-dk-orange;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    li {
+      float: none;
+      display: inline-block;
+    }
+  }
