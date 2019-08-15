@@ -23,25 +23,60 @@ body {
     border-bottom: 3px solid transparent;
 }
 
-.navbar a:hover {
-    border-bottom: 3px solid red;
-    transition: border-bottom 1s linear;
+/* .nav-link:hover {
+    border-bottom: 3px solid #E83E5B;
+    transition: border-bottom 1s;
 }
+*/
 
 .navbar li.active a {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #E83E5B;
 }
+
+/* Underline From Left */
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #E83E5B;
+    height: 3px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
 
 .navbar .navbar-toggler-icon {
     background-image: url(../images/icons/menu.svg);
 }
 
-.display-3 {
+h1, h2, h3,
+h4, h5,
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
     font-family: 'Roboto Mono', monospace;
 }
 
-#hero,
-#work {
+#hero {
     height: 100vh;
 }
 
@@ -50,20 +85,22 @@ body {
 }
 
 #triangleCircle {
-    top: -20em;
-    left: -7em;
+    top: -20vh;
+    left: 7em;
     position: relative;
 }
 
 #triangleSquare {
-    top: -10em;
-    right: -7em;
+    top: 5vh;
+    right: 7em;
     position: relative;
 }
 
+.work-section {
+    padding: 7vh 0;
+}
 
 /* Bob */
-
 @-webkit-keyframes hvr-bob {
     0% {
         -webkit-transform: translateY(-8px);
