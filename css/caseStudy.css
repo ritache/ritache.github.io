@@ -1,0 +1,46 @@
+body {
+    background: #F6F6F6;
+    color: #103155;
+}
+
+#chevron {
+    margin-top: 6em;
+    color: #103155;
+}
+
+.heroImage {
+    max-height: 400px;
+}
+
+/* #overview > * {
+    margin: 1em 0em;
+} */
+
+
+/*
+-------------------
+Links
+-------------------
+*/
+a,
+button a
+{
+    color: #103155;
+}
+
+a:hover, a:active,
+button:hover a, button a:hover, button a:active
+{
+    color: #E83E5B;
+}
+
+
+/*
+-------------------
+Footer
+-------------------
+*/
+
+.page-footer a {
+    color: #103155;
+}

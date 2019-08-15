@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,13 +9,73 @@ html {
 body {
     background-image: linear-gradient(#571842, #082341, #071626);
     background-attachment: fixed;
-    /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
+i {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    line-height: 180%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section li {
+    padding: 0.5em 0em;
+}
+
+/*
+-------------------
+Links
+-------------------
+*/
+a,
+button a
+{
+    color: white;
+}
+
+a:hover, a:active,
+button:hover a, button a:hover, button a:active
+{
+    color: #103155;
+}
+
+a, a:hover, a:active,
+button a, button:hover a, button:hover, button a:active {
+    text-decoration: none;
+}
+
+#scrollTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+}
+
+/*
+-------------------
+Navbar
+-------------------
+*/
 .navbar {
-    background: white; 
+    background: white;
+}
+
+#logo {
+    fill: #103155;
+}
+
+#logo:hover {
+    fill: #E83E5B;
 }
 
 .navbar a {
@@ -23,77 +87,38 @@ body {
     border-bottom: 3px solid transparent;
 }
 
-.heroText {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 5em;
-}
-
-/* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
-    .heroText {
-        font-size: 3em;
-    }
-}
-
-/* .nav-link:hover {
-    border-bottom: 3px solid #E83E5B;
-    transition: border-bottom 1s;
-}
-*/
-
 .navbar li.active a {
     border-bottom: 3px solid #E83E5B;
 }
 
-/* Underline From Left */
-.hvr-underline-from-left {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-  }
-  .hvr-underline-from-left:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    background: #E83E5B;
-    height: 3px;
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-    right: 0;
-  }
 
-.navbar .navbar-toggler-icon {
-    background-image: url(../images/icons/menu.svg);
+/*
+-------------------
+Footer
+-------------------
+*/
+
+.page-footer a {
+    color: white;
 }
 
-h1, h2, h3,
-h4, h5,
-.display-1,
-.display-2,
-.display-3,
-.display-4 {
-    font-family: 'Roboto Mono', monospace;
+.footer-copyright {
+    font-size: 0.8em;
 }
+
+/*
+-------------------
+Homepage hero section
+-------------------
+*/
 
 #hero {
-    height: 100vh;
+    height: 100%;
 }
 
 #chevron {
     margin-top: 6em;
+    color: white;
 }
 
 #triangleCircle {
@@ -108,11 +133,75 @@ h4, h5,
     position: relative;
 }
 
+.heroText {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5em;
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .heroText {
+        font-size: 3em;
+    }
+
+    .heroSubheader {
+        font-size: 1.5em;
+    }
+}
+
 .work-section {
     padding: 7vh 0;
 }
 
+/*
+-------------------
+Animations
+-------------------
+*/
+
+/* Underline From Left */
+
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #E83E5B;
+    height: 3px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url(../images/icons/menu.svg);
+}
+
+h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4 {
+    font-family: 'Roboto Mono', monospace;
+}
+
 /* Bob */
+
 @-webkit-keyframes hvr-bob {
     0% {
         -webkit-transform: translateY(-8px);
@@ -165,9 +254,7 @@ h4, h5,
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.hvr-bob:hover,
-.hvr-bob:focus,
-.hvr-bob:active {
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
     -webkit-animation-name: hvr-bob-float, hvr-bob;
     animation-name: hvr-bob-float, hvr-bob;
     -webkit-animation-duration: .3s, 1.5s;
