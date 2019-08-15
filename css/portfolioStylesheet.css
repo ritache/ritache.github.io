@@ -23,6 +23,18 @@ body {
     border-bottom: 3px solid transparent;
 }
 
+.heroText {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 5em;
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .heroText {
+        font-size: 3em;
+    }
+}
+
 /* .nav-link:hover {
     border-bottom: 3px solid #E83E5B;
     transition: border-bottom 1s;
