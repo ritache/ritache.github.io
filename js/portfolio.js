@@ -23,6 +23,21 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//----------------
+// Image Zoom
+//----------------
+$(document).ready(function() {
+	$(".fancybox-button").fancybox({
+		prevEffect		: 'none',
+		nextEffect		: 'none',
+		closeBtn		: false,
+		helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {}
+		}
+	});
+});
+
 //   // disable dragging and saving of images
 //   document.oncontextmenu = function(e){
 //     var target = (typeof e !="undefined")? e.target: event.srcElement
