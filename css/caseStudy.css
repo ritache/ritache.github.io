@@ -9,12 +9,14 @@ body {
 }
 
 .heroImage {
-   
+    max-width: 70%;
+    height:auto;
 }
 
-/* #overview > * {
-    margin: 1em 0em;
-} */
+.img-row {
+    height: 100%;
+}
+
 
 
 /*

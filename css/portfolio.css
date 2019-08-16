@@ -1,5 +1,6 @@
 html, body {
-    height: 100%;
+    width: 100%;
+    min-height: 100%;
 }
 
 html {
@@ -18,7 +19,7 @@ i {
 }
 
 p {
-    line-height: 180%;
+    line-height: 160%;
 }
 
 ul {
@@ -114,6 +115,7 @@ Homepage hero section
 
 #hero {
     height: 100%;
+    min-height: 100vh;
 }
 
 #chevron {
