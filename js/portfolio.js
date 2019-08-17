@@ -41,7 +41,7 @@ $(document).ready(function() {
 //-------------
 // Lazy image loading
 //-------------
-lazyload();
+//lazyload();
 
 // When the user clicks on an anchor with a class name "anchor"...
 $('body').on('click', 'a.anchor', function(e) {
