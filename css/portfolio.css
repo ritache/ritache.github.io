@@ -22,8 +22,12 @@ p {
     line-height: 160%;
 }
 
+ul .case-index {
+    list-style-type: decimal-leading-zero;
+}
+
 ul {
-    list-style-type: none;
+    list-style: square inside;
 }
 
 section li {
