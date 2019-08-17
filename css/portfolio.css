@@ -62,6 +62,10 @@ button a, button:hover a, button:hover, button a:active {
     padding: 15px; /* Some padding */
 }
 
+.button-triangle {
+    height: 38px;
+}
+
 /*
 -------------------
 Navbar

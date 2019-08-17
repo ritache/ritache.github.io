@@ -21,6 +21,12 @@ body {
   list-style-type: decimal-leading-zero;
 }
 
+div.container > section:nth-of-type(odd) {
+  background: white;
+  background-size: cover;
+}
+
+
 /*
 -------------------
 Links
