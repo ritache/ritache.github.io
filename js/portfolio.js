@@ -43,38 +43,6 @@ $(document).ready(function() {
 //-------------
 //lazyload();
 
-// When the user clicks on an anchor with a class name "anchor"...
-$('body').on('click', 'a.anchor', function(e) {
-
-  // Get the hash. In this example, "#myDestinationAnchor".
-  var targetSelector = this.hash;
-  var $target = $(targetSelector);
-
-  // Animate the scroll to the destination...
-  $('html, body').animate(
-      {
-          scrollTop: $target.offset().top // Scroll to this location.
-      }, {
-          // Set the duration long enough to allow time
-          // to lazy load the elements.
-          duration: 2000,
-
-          // At each animation step, check whether the target has moved.
-          step: function( now, fx ) {
-
-              // Where is the target now located on the page?
-              // i.e. its location will change as images etc. are lazy loaded
-              var newOffset = $target.offset().top;
-
-              // If where we were originally planning to scroll to is not
-              // the same as the new offset (newOffset) then change where
-              // the animation is scrolling to (fx.end).
-              if(fx.end !== newOffset)
-                  fx.end = newOffset;
-          }
-      }
-  );
-});
 // registerListener('load', setLazy);
 // registerListener('load', lazyLoad);
 // registerListener('scroll', lazyLoad);
