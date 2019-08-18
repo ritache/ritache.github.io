@@ -50,7 +50,7 @@ button a
     color: white;
 }
 
-button:hover a, button a:hover, button a:active
+button:hover, button a:hover, button a:active
 {
     color: #103155;
 }
@@ -65,7 +65,8 @@ button a, button:hover a, button:hover, button a:active {
     border-color:  white;
 }
 
-.btn-outline-primary:hover {
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
     background:  white;
 }
 
