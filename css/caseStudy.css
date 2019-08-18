@@ -4,17 +4,22 @@ body {
 }
 
 #chevron {
-    margin-top: 6em;
+    margin-top: 5em;
     color: #103155;
 }
 
 .heroImage {
-    max-width: 70%;
-    height:auto;
+    max-width: 100%;
+    width: 460px;
+    height: auto;
 }
 
 .img-row {
     height: 100%;
+}
+
+.index-triangle {
+  height: 100%;
 }
 
 .case-index {
