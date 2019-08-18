@@ -25,10 +25,10 @@
     <nav id="mainNavbar" class="navbar navbar-expand-lg sticky-top text-uppercase shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <svg width="36" height="44" viewBox="0 0 36 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="logo" class="hvr-float" width="36" height="44" viewBox="0 0 36 44" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.462738 25.0216C0.418151 24.995 0.390839 24.9469 0.390839 24.895V24.895V2.36258C0.390839 1.68616 1.25176 1.39891 1.65793 1.9398L7.36844 9.54452L10.5485 13.7794L18.8893 24.8931C18.8902 24.8943 18.8916 24.895 18.8931 24.895V24.895C18.8945 24.895 18.8959 24.8957 18.8968 24.8968L33.0384 42.8543C33.5215 43.4678 32.7955 44.2945 32.1247 43.8947L0.462738 25.0216ZM23.3835 24.6109C23.5164 24.7897 23.726 24.895 23.9487 24.895H34.6868C35.0756 24.895 35.3908 24.5798 35.3908 24.1909V12.5737C35.3908 5.76885 29.8744 0.252411 23.0695 0.252411H6.68133C6.10256 0.252411 5.77099 0.911926 6.11622 1.37646L11.9754 9.26041C12.1082 9.43916 12.3178 9.54451 12.5405 9.54451H24.1256C26.4587 9.54451 28.3501 11.4359 28.3501 13.769V15.8812C28.3501 16.27 28.0349 16.5853 27.646 16.5853H18.8195C18.2408 16.5853 17.9092 17.2448 18.2544 17.7093L23.3835 24.6109Z"
-                        fill="#103155" />
+                        d="M0.462738 25.0216C0.418151 24.995 0.390839 24.9469 0.390839 24.895V24.895V2.36258C0.390839 1.68616 1.25176 1.39891 1.65793 1.9398L7.36844 9.54452L10.5485 13.7794L18.8893 24.8931C18.8902 24.8943 18.8916 24.895 18.8931 24.895V24.895C18.8945 24.895 18.8959 24.8957 18.8968 24.8968L33.0384 42.8543C33.5215 43.4678 32.7955 44.2945 32.1247 43.8947L0.462738 25.0216ZM23.3835 24.6109C23.5164 24.7897 23.726 24.895 23.9487 24.895H34.6868C35.0756 24.895 35.3908 24.5798 35.3908 24.1909V12.5737C35.3908 5.76885 29.8744 0.252411 23.0695 0.252411H6.68133C6.10256 0.252411 5.77099 0.911926 6.11622 1.37646L11.9754 9.26041C12.1082 9.43916 12.3178 9.54451 12.5405 9.54451H24.1256C26.4587 9.54451 28.3501 11.4359 28.3501 13.769V15.8812C28.3501 16.27 28.0349 16.5853 27.646 16.5853H18.8195C18.2408 16.5853 17.9092 17.2448 18.2544 17.7093L23.3835 24.6109Z" />
                 </svg>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -48,22 +48,56 @@
         </div>
     </nav>
 
-    <!--Start of hero-->
-    <section id="hero" class="d-flex align-items-center justify-content-center">
-        <div id="triangleCircle" class="col-lg-2 d-none d-lg-inline">
-            <img alt="Circle and triangle" src="images/triangle-circle.svg">
-        </div>
+    <!--Start of about-->
+    <section id="about" class="container-fluid">
+        <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb my-5 ">
+                        <h2 class="pb-3">Hi, I'm Rita!</h2>
+                        <p>
+                            I'm a UX/UI designer based in Toronto. My passion is to create products that are not
+                            only
+                            engaging to users, but also to the teams which build, design, and shape the entirety of
+                            the
+                            experience.
+                        </p>
 
-        <div id="headingGroup" class="col-lg-8 d-flex flex-column align-items-center my-5">
-            <h1 class="d-inline display-3">Coming Soon!</h1>
-            <img alt="Circle underline" src="images/header-circles.svg">
-            <!-- <a id="chevron" href="#work" class="hvr-bob">
-                <i class="fas fa-chevron-down"></i>
-            </a> -->
-        </div>
+                        <p>
+                            Being a developer in a previous life, I’m very familiar with the expectations and
+                            limitations of coding a piece of software. A position in UX gives me the opportunity to
+                            blend this knowledge with my love of design and collaborate with the engineering team
+                            using
+                            the same language (programming or otherwise).
+                        </p>
 
-        <div id="triangleSquare" class="col-lg-2 d-none d-lg-inline">
-            <img alt="Square and triangle" src="images/triangle-square.svg">
+                        <p>
+                            I believe that a cohesive, well-organized UX is vital to the success and evolution of a
+                            project. When everyone knows what makes the personas tick, when engineers can find the
+                            CSS
+                            for that tricky gradient, and designers think putting together a mockup is a breeze with
+                            the
+                            pattern library, that’s when I know that I’ve done good work as a UX designer.
+                        </p>
+
+                        <p>
+                            In my free time I pursue personal illustration projects, play video games, and help my
+                            cat
+                            down from really high shelves.
+                        </p>
+
+                        <p>
+                            If you think I’d be a good fit for your team, or simply want to chat about UX, don’t
+                            hesitate to reach out!
+                        </p>
+
+                        <p>
+                            You can contact me by
+                            <span class="lead-bold"><a href="mailto:ritachekhovskaya@gmail.com">email</a></span> 
+                            or on
+                            <span class="lead-bold"><a href="https://linkedin.com/in/rita-che/">LinkedIn</a></span>.
+                        </p>
+                    </div>
+                </div>
         </div>
     </section>
 
@@ -97,7 +131,7 @@
                     </a>
 
                     <!--Medium-->
-                    <a href="https://www.pinterest.ca/ritachek/" class="footer-icon" target="_blank">
+                    <a href="https://medium.com/@ritachekhovskaya" class="footer-icon" target="_blank">
                         <i class="fab fa-medium-m fa-lg"></i>
                     </a>
                 </div>
