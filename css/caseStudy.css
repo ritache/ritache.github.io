@@ -1,16 +1,10 @@
-body {
-    background: #F6F6F6;
-    color: #103155;
-}
-
 #chevron {
     margin-top: 5em;
     color: #103155;
 }
 
 .heroImage {
-    max-width: 100%;
-    width: 460px;
+    width: 100%;
     height: auto;
 }
 
@@ -31,48 +25,6 @@ div.container > section:nth-of-type(odd) {
   background-size: cover;
 }
 
-
-/*
--------------------
-Links
--------------------
-*/
-a,
-button a
-{
-    color: #103155;
-}
-
-a:hover, a:active
-{
-    color: #E83E5B;
-}
-
-.btn-outline-primary:hover,
-.btn-outline-primary {
-    border-color:  #103155;
-}
-
-.btn-outline-primary:hover {
-    background:  #103155;
-}
-
-button:hover a, button a:hover, button a:active {
-    border-color:  #103155;
-    color: white;
-}
-
-
-
-/*
--------------------
-Footer
--------------------
-*/
-
-.page-footer a {
-    color: #103155;
-}
 
 /* Style the Image Used to Trigger the Modal */
 .img-zoom {
