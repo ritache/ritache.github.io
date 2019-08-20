@@ -23,26 +23,34 @@ p {
 }
 
 ul {
-    list-style-type: none;
+    list-style: square inside;
 }
 
 section li {
     padding: 0.5em 0em;
 }
 
+/* 
+------------------
+Text styles
+------------------
+*/
+.lead-bold {
+    font-weight: 700;
+    color: #E83E5B;
+  }
+
 /*
 -------------------
 Links
 -------------------
 */
-a,
 button a
 {
     color: white;
 }
 
-a:hover, a:active,
-button:hover a, button a:hover, button a:active
+button:hover, button a:hover, button a:active
 {
     color: #103155;
 }
@@ -50,6 +58,21 @@ button:hover a, button a:hover, button a:active
 a, a:hover, a:active,
 button a, button:hover a, button:hover, button a:active {
     text-decoration: none;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary {
+    border-color:  white;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+    background:  white;
+}
+
+button:hover a, button a:hover, button a:active {
+    border-color: white;
+    color: #103155;
 }
 
 #scrollTop {
@@ -60,6 +83,19 @@ button a, button:hover a, button:hover, button a:active {
     z-index: 99; /* Make sure it does not overlap */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
+}
+
+.button-triangle {
+    height: 38px;
+}
+
+a,
+.footer-icon:hover {
+    color: #E83E5B;
+}
+
+a:hover, a:active {
+    color: white;
 }
 
 /*
@@ -201,6 +237,25 @@ Animations
 h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4 {
     font-family: 'Roboto Mono', monospace;
 }
+
+/* Float */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
 
 /* Bob */
 
