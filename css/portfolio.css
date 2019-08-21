@@ -58,21 +58,21 @@ a:hover, a:active
     text-decoration: none;
 }
 
-.btn-outline-primary:hover,
 .btn-outline-primary {
     border-color:  #103155;
 }
 
 .btn-outline-primary:hover {
+    border-color:  #103155;
     background:  #103155;
 }
-
 
 button:hover a, button a:hover, button a:active {
     color: white;
     border-color:  #103155;
     text-decoration: none;
 }
+
 #scrollTop {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -81,6 +81,20 @@ button:hover a, button a:hover, button a:active {
     z-index: 99; /* Make sure it does not overlap */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
+    border-radius: 100%; /* Round */
+    width: 2em;
+    height: 2em;
+    background: white;
+    border: none;
+    outline: none;
+}
+
+#scrollTopIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
 }
 
 .button-triangle {
@@ -171,10 +185,29 @@ Homepage hero section
 }
 
 /*
----------------------
+-------------------
+Footer
+-------------------
 */
-#about {
-    height: 100vh;
+.footer {
+    color: white;
+    /* background: #103155; */
+    background-image: linear-gradient(to right, #071626,  #571842 , #071626);
+}
+
+.footer .btn-outline-primary {
+    border-color:  white;
+    color: white;
+}
+
+.footer .btn-outline-primary:hover {
+    border-color:  white;
+    background:  white;
+    color: #103155;
+}
+
+.footer-icon {
+    color: white;
 }
 
 /*

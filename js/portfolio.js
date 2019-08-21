@@ -1,13 +1,13 @@
 // ensure navbar doesn't cover scroll to section
-$('.anchor').click(function(){    
+$('.anchor').click(function () {
   var divId = $(this).attr('href');
-   $('html, body').animate({
+  $('html, body').animate({
     scrollTop: $(divId).offset().top - 80
   }, 100);
 });
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -26,17 +26,19 @@ function topFunction() {
 //----------------
 // Image Zoom
 //----------------
-$(document).ready(function() {
-	$(".fancybox-button").fancybox({
-		prevEffect		: 'none',
-		nextEffect		: 'none',
-		closeBtn		: false,
-		helpers		: {
-			title	: { type : 'inside' },
-			buttons	: {}
-		}
-	});
+$(document).ready(function () {
+  $(".fancybox-button").fancybox({
+    prevEffect: 'none',
+    nextEffect: 'none',
+    closeBtn: false,
+    helpers: {
+      title: { type: 'inside' },
+      buttons: {}
+    }
+  });
 });
+
+
 
 //-------------
 // Lazy image loading
@@ -63,7 +65,7 @@ $(document).ready(function() {
 //             }
 //         }
 //     }
-    
+
 //     cleanLazy();
 // }
 
@@ -73,7 +75,7 @@ $(document).ready(function() {
 
 // function isInViewport(el){
 //     var rect = el.getBoundingClientRect();
-    
+
 //     return (
 //         rect.bottom >= 0 && 
 //         rect.right >= 0 && 
