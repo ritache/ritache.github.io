@@ -140,8 +140,7 @@ Homepage hero section
 */
 
 #home-hero {
-    height: 100%;
-    min-height: 100vh;
+    height: 100vh;
     color: white;
     background-image: linear-gradient(#571842, #082341, #071626);
     background-attachment: fixed;
