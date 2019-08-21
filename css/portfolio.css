@@ -1,6 +1,6 @@
 html, body {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 
 html {
@@ -45,13 +45,14 @@ Links
 -------------------
 */
 a,
-button a
+button a,
+.btn-outline-primary
 {
     color: #103155;
     text-decoration: none;
 }
 
-a:active
+a:hover, a:active
 {
     color: #E83E5B;
     text-decoration: none;
@@ -66,12 +67,12 @@ a:active
     background:  #103155;
 }
 
-a:hover, button:hover a, button a:hover, button a:active {
+
+button:hover a, button a:hover, button a:active {
     color: white;
     border-color:  #103155;
     text-decoration: none;
 }
-
 #scrollTop {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -85,15 +86,6 @@ a:hover, button:hover a, button a:hover, button a:active {
 .button-triangle {
     height: 38px;
 }
-
-.footer-icon {
-    color: #103155;
-}
-
-.footer-icon:hover {
-    color: #E83E5B;
-}
-
 
 /*
 -------------------
@@ -112,13 +104,14 @@ Navbar
     fill: #E83E5B;
 }
 
-.navbar a {
+.navbar li a {
+    border-bottom: 3px solid transparent;
     font-family: 'Roboto Mono', monospace;
     color: #103155;
     letter-spacing: 0.1em;
     font-size: 1.1em;
     font-weight: 700;
-    border-bottom: 3px solid transparent;
+    text-decoration: none;
 }
 
 .navbar li.active a {
@@ -177,20 +170,9 @@ Homepage hero section
     padding: 7vh 0;
 }
 
-
 /*
--------------------
-Footer
--------------------
+---------------------
 */
-
-.page-footer a {
-    color: #103155;
-}
-
-.footer-copyright {
-    font-size: 0.8em;
-}
 
 /*
 -------------------
