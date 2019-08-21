@@ -25,10 +25,6 @@ div.container > section:nth-of-type(odd) {
   background-size: cover;
 }
 
-#overview {
-  background: white;
-}
-
 
 /* Style the Image Used to Trigger the Modal */
 .img-zoom {
