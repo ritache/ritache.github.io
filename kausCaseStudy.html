@@ -26,30 +26,30 @@
 </head>
 
 <body>
-    <nav id="mainNavbar" class="navbar navbar-expand-lg sticky-top text-uppercase shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <svg id="logo" class="hvr-float" width="36" height="44" viewBox="0 0 36 44" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.462738 25.0216C0.418151 24.995 0.390839 24.9469 0.390839 24.895V24.895V2.36258C0.390839 1.68616 1.25176 1.39891 1.65793 1.9398L7.36844 9.54452L10.5485 13.7794L18.8893 24.8931C18.8902 24.8943 18.8916 24.895 18.8931 24.895V24.895C18.8945 24.895 18.8959 24.8957 18.8968 24.8968L33.0384 42.8543C33.5215 43.4678 32.7955 44.2945 32.1247 43.8947L0.462738 25.0216ZM23.3835 24.6109C23.5164 24.7897 23.726 24.895 23.9487 24.895H34.6868C35.0756 24.895 35.3908 24.5798 35.3908 24.1909V12.5737C35.3908 5.76885 29.8744 0.252411 23.0695 0.252411H6.68133C6.10256 0.252411 5.77099 0.911926 6.11622 1.37646L11.9754 9.26041C12.1082 9.43916 12.3178 9.54451 12.5405 9.54451H24.1256C26.4587 9.54451 28.3501 11.4359 28.3501 13.769V15.8812C28.3501 16.27 28.0349 16.5853 27.646 16.5853H18.8195C18.2408 16.5853 17.9092 17.2448 18.2544 17.7093L23.3835 24.6109Z" />
-                </svg>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
-                    class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item hvr-underline-from-left mr-lg-4">
-                        <a class="nav-link" href="index.html">Work<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item hvr-underline-from-left">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top text-uppercase shadow-sm">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <svg id="logo" class="hvr-float" width="36" height="44" viewBox="0 0 36 44" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.462738 25.0216C0.418151 24.995 0.390839 24.9469 0.390839 24.895V24.895V2.36258C0.390839 1.68616 1.25176 1.39891 1.65793 1.9398L7.36844 9.54452L10.5485 13.7794L18.8893 24.8931C18.8902 24.8943 18.8916 24.895 18.8931 24.895V24.895C18.8945 24.895 18.8959 24.8957 18.8968 24.8968L33.0384 42.8543C33.5215 43.4678 32.7955 44.2945 32.1247 43.8947L0.462738 25.0216ZM23.3835 24.6109C23.5164 24.7897 23.726 24.895 23.9487 24.895H34.6868C35.0756 24.895 35.3908 24.5798 35.3908 24.1909V12.5737C35.3908 5.76885 29.8744 0.252411 23.0695 0.252411H6.68133C6.10256 0.252411 5.77099 0.911926 6.11622 1.37646L11.9754 9.26041C12.1082 9.43916 12.3178 9.54451 12.5405 9.54451H24.1256C26.4587 9.54451 28.3501 11.4359 28.3501 13.769V15.8812C28.3501 16.27 28.0349 16.5853 27.646 16.5853H18.8195C18.2408 16.5853 17.9092 17.2448 18.2544 17.7093L23.3835 24.6109Z" />
+                        </svg>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                            class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item hvr-underline-from-left mr-lg-4">
+                                <a class="nav-link" href="index.html">Work<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-left">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
     <!-- Back to top button -->
     <button onclick="topFunction()" id="scrollTop" class="hvr-bob shadow-sm" title="Go to top">
@@ -94,7 +94,8 @@
 
                     <!-- Index -->
                     <div class="row col-md-10 mb-5">
-                        <div class="col-md-4 p-0 my-2 my-md-0 text-center d-flex justify-content-start align-items-center">
+                        <div
+                            class="col-md-4 p-0 my-2 my-md-0 text-center d-flex justify-content-start align-items-center">
                             <img class="img-fluid index-triangle pr-2" alt="Overlapping triangles"
                                 src="images/triangle-orange-l.svg">
                             <a href="#research" class="anchor">
@@ -107,7 +108,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 p-0 my-2 my-md-0 text-center d-flex justify-content-start align-items-center">
+                        <div
+                            class="col-md-4 p-0 my-2 my-md-0 text-center d-flex justify-content-start align-items-center">
                             <img class="img-fluid index-triangle pr-2" alt="Overlapping triangles"
                                 src="images/triangle-magenta-l.svg">
                             <a href="#design" class="anchor">
@@ -120,7 +122,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 p-0 my-2 my-md-0 text-center d-flex justify-content-start align-items-center">
+                        <div
+                            class="col-md-4 p-0 my-2 my-md-0 text-center d-flex justify-content-start align-items-center">
                             <img class="img-fluid index-triangle pr-2" alt="Overlapping triangles"
                                 src="images/triangle-blue-l.svg">
                             <a href="#test" class="anchor">
@@ -432,11 +435,9 @@
                             </a>
                         </div>
                         <div class="col-lg-5 p-0">
-                            <a href="images/style-tile-2.png" data-fancybox
-                                data-caption="Kaus style tile.">
+                            <a href="images/style-tile-2.png" data-fancybox data-caption="Kaus style tile.">
                                 <img src="images/thumb/style-tile-2_sm.png"
-                                    class="data-fancybox shadow-sm figure-img img-fluid rounded"
-                                    alt="Kaus style tile.">
+                                    class="data-fancybox shadow-sm figure-img img-fluid rounded" alt="Kaus style tile.">
                             </a>
                         </div>
                     </div>
@@ -834,42 +835,46 @@
     <footer class="footer navbar sticky-bottom">
         <!-- Footer Elements -->
         <div class="container">
-            <!-- Grid column -->
-            <div class="col-md-12 pt-4 pb-2">
+            <div class=" col-md-12 pt-4 pb-2">
                 <div class="mb-2 row justify-content-center align-items-center">
-                    <!--Linkedin -->
-                    <a href="https://linkedin.com/in/rita-che/" target="_blank" class="footer-icon mr-4 mr-md-5">
-                        <i class="fab fa-linkedin-in fa-lg"></i>
-                    </a>
+                    <div class="col-12 col-sm-4 pb-3 pb-md-0 d-flex justify-content-center justify-content-md-end">
+                        <!--Linkedin -->
+                        <a href="https://linkedin.com/in/rita-che/" target="_blank" class="footer-icon mr-4 mr-md-5">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
 
-                    <!--Dribble-->
-                    <a href="https://dribbble.com/ritache" target="_blank" class="footer-icon mr-4 mr-md-5">
-                        <i class="fab fa-dribbble fa-lg"></i>
-                    </a>
-                    <a href="about.html#contact">
-                        <button type="button" class="btn btn-outline-primary mr-4 mr-md-5">
-                            contact me
-                        </button>
-                    </a>
-                    <!--Pinterest-->
-                    <a href="https://www.pinterest.ca/ritachek/" class="footer-icon mr-4 mr-md-5" target="_blank">
-                        <i class="fab fa-pinterest fa-lg"></i>
-                    </a>
+                        <!--Dribble-->
+                        <a href="https://dribbble.com/ritache" target="_blank" class="footer-icon">
+                            <i class="fab fa-dribbble fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-2 pb-3 pb-md-0 d-flex justify-content-center">
+                        <a href="about.html#contact">
+                            <button type="button" class="btn btn-outline-primary">
+                                contact me
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-4 d-flex justify-content-center justify-content-md-start">
+                        <!--Pinterest-->
+                        <a href="https://www.pinterest.ca/ritachek/" class="footer-icon mr-4 mr-md-5" target="_blank">
+                            <i class="fab fa-pinterest fa-lg"></i>
+                        </a>
 
-                    <!--Medium-->
-                    <a href="https://medium.com/@ritachekhovskaya" class="footer-icon" target="_blank">
-                        <i class="fab fa-medium-m fa-lg"></i>
-                    </a>
+                        <!--Medium-->
+                        <a href="https://medium.com/@ritachekhovskaya" class="footer-icon" target="_blank">
+                            <i class="fab fa-medium-m fa-lg"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- Grid column -->
         </div>
         <!-- Footer Elements -->
 
         <!-- Copyright -->
         <section class="container-fluid copyright d-flex justify-content-center">
             <div class="footer-copyright text-center pb-3">Designed and coded by
-                <strong>Margarita Chekhovskaya</strong>
+                <strong>Rita Chekhovskaya</strong>
             </div>
         </section>
         <!-- Copyright -->
