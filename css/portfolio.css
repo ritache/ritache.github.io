@@ -193,7 +193,7 @@ About Page
     background-repeat: no-repeat;
     padding-top: 70px;
   }
-  
+
 /*
 -------------------
 Footer
@@ -201,8 +201,8 @@ Footer
 */
 .footer {
     color: white;
-    /* background: #103155; */
-    background-image: linear-gradient(to right, #071626,  #571842 , #071626);
+    background: #071626;
+    /* background-image: linear-gradient(to right, #071626,  #571842 , #071626); */
 }
 
 .footer .btn-outline-primary {
