@@ -185,6 +185,17 @@ Homepage hero section
 
 /*
 -------------------
+About Page
+-------------------
+*/
+#about {
+    background-image: url("../images/cat.svg");
+    background-repeat: no-repeat;
+    padding-top: 70px;
+  }
+  
+/*
+-------------------
 Footer
 -------------------
 */
