@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+        integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/caseStudy.css" />
+
+    <title>Duolingo Case Study</title>
+    <link rel="icon" type="image/png" href="images/logo-fav.png" />
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top text-uppercase shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg id="logo" class="hvr-float" width="36" height="44" viewBox="0 0 36 44" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.462738 25.0216C0.418151 24.995 0.390839 24.9469 0.390839 24.895V24.895V2.36258C0.390839 1.68616 1.25176 1.39891 1.65793 1.9398L7.36844 9.54452L10.5485 13.7794L18.8893 24.8931C18.8902 24.8943 18.8916 24.895 18.8931 24.895V24.895C18.8945 24.895 18.8959 24.8957 18.8968 24.8968L33.0384 42.8543C33.5215 43.4678 32.7955 44.2945 32.1247 43.8947L0.462738 25.0216ZM23.3835 24.6109C23.5164 24.7897 23.726 24.895 23.9487 24.895H34.6868C35.0756 24.895 35.3908 24.5798 35.3908 24.1909V12.5737C35.3908 5.76885 29.8744 0.252411 23.0695 0.252411H6.68133C6.10256 0.252411 5.77099 0.911926 6.11622 1.37646L11.9754 9.26041C12.1082 9.43916 12.3178 9.54451 12.5405 9.54451H24.1256C26.4587 9.54451 28.3501 11.4359 28.3501 13.769V15.8812C28.3501 16.27 28.0349 16.5853 27.646 16.5853H18.8195C18.2408 16.5853 17.9092 17.2448 18.2544 17.7093L23.3835 24.6109Z" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item hvr-underline-from-left mr-lg-4">
+                        <a class="nav-link" href="index.html">Work<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item hvr-underline-from-left">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="scrollTop" class="hvr-bob shadow-sm" title="Go to top">
+        <i id="scrollTopIcon" class="fas fa-chevron-up"></i>
+    </button>
+
+    <!--HERO-->
+    <section class="d-flex align-items-center justify-content-center mt-5">
+
+        <div class="col-lg-10 d-flex flex-column align-items-center text-center my-5">
+            <img class="heroImage my-4" alt="Duolingo" src="images/duolingo/duolingo-case-header.png">
+            <h1 class="heroText">Duolingo</h1>
+            <h3 class="heroSubheader">Enhancing an existing app.</h3>
+            <span class="mt-4">
+                <button type="button" class="btn btn-outline-primary ">
+                    <a href="https://bit.ly/2oqbCCH" target="_blank">see final prototype</a>
+                </button>
+            </span>
+        </div>
+    </section>
+
+    <!--Start of work-->
+    <section id="work" class="container-fluid p-0">
+        <div class="container d-flex flex-column justify-content-center col-lg-8 col-xl-6">
+            <!-- OVERVIEW ----------------------------------------------------->
+            <section id="overview" class="container-fluid">
+                <div class="row d-flex justify-content-center mt-4 px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3>The Task</h3>
+                        <p>
+                            The purpose of this project was to add new, complementary features to Duolingo, a
+                            language-learning app.
+
+                        </p>
+                        <p>
+                            Duolingo’s goal is to make language learning fun, accessible, and rewarding. However,
+                            learning a language is difficult to do in isolation. Duolingo already allows its users to
+                            make friends and participate in leaderboards, but felt that its social capabilities could
+                            be enhanced to make learning a more collaborative experience.
+                        </p>
+                        <p>
+                            My task was to design an integrated chat - complete with a chatbot - and create additional
+                            avenues for social interaction.
+                        </p>
+                        <h3 class="pt-3">The Process</h3>
+                    </div>
+
+                    <!-- Index -->
+                    <div class="row col-md-10 mb-5">
+                        <div
+                            class="col-md-4 p-0 my-2 my-md-0 text-center d-flex justify-content-start align-items-center">
+                            <img class="img-fluid index-triangle pr-2" alt="Overlapping triangles"
+                                src="images/triangle-orange-l.svg">
+                            <a href="#research" class="anchor">
+                                <div class="d-flex flex-column align-items-start">
+                                    <p class="m-0 lead">
+                                        01. Research
+                                    </p>
+                                    <p class="m-0">Empathise</p>
+                                    <p class="m-0">Define</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div
+                            class="col-md-4 p-0 my-2 my-md-0 text-center d-flex justify-content-start align-items-center">
+                            <img class="img-fluid index-triangle pr-2" alt="Overlapping triangles"
+                                src="images/triangle-magenta-l.svg">
+                            <a href="#design" class="anchor">
+                                <div class="d-flex flex-column align-items-start">
+                                    <p class="m-0 lead">
+                                        02. Design
+                                    </p>
+                                    <p class="m-0">Ideate</p>
+                                    <p class="m-0">Prototype</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div
+                            class="col-md-4 p-0 my-2 my-md-0 text-center d-flex justify-content-start align-items-center">
+                            <img class="img-fluid index-triangle pr-2" alt="Overlapping triangles"
+                                src="images/triangle-blue-l.svg">
+                            <a href="#test" class="anchor">
+                                <div class="d-flex flex-column align-items-start">
+                                    <p class="m-0 lead">
+                                        03. Test
+                                    </p>
+                                    <p class="m-0">Deliver</p>
+                                    <p class="m-0">Iterate</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESEARCH -->
+            <section id="research" class="mt-5 container-fluid">
+                <div class="row d-flex justify-content-center text-center px-3">
+                    <div class="p-0 mt-3">
+                        <h1 class="">01. Research</h1>
+                        <img class="img-fluid" alt="Overlapping circles" src="images/header-circles-1.svg">
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center mt-4 px-3">
+                    <div class="col-lg-10 p-0">
+                        <p>
+                            The research for this project consisted of looking at market trends, evaluating competitor’s
+                            strengths and weaknesses, and conducting a survey and one-on-one interviews with Duolingo
+                            users and multilingual individuals.
+                        </p>
+                        <p>
+                            My competitor analysis focused on branding, UI, and main features of other language learning
+                            apps, as well as the strengths and weaknesses of a couple of popular chatbots.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">Survey Findings</h3>
+                    </div>
+                </div> -->
+
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">Interview Findings</h3>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="row col-lg-10 p-0 justify-content-start">
+                        <div class="col-lg-5 p-0 mt-2 mr-0 mr-lg-5">
+                            <h3 class="lead lead-bold">Key Takeaways</h3>
+                            <p>
+                                Practicing with a speaker of the target language helps people become braver and
+                                recall words that would express their thoughts.
+                            </p>
+                            <p>
+                                Media like movies and songs help to become familiar with the sounds and accents of the
+                                language.
+                            </p>
+                            <p>
+                                Topics related to areas of interest ties the language to other useful applications.
+                            </p>
+                            <p>
+                                Competitive environment and ability to see progress are excellent motivators.
+                            </p>
+                            <p>
+                                Variety of exercises keeps learning interesting and fresh.
+                            </p>
+                        </div>
+                        <div class="col-lg-5 p-0 mt-2">
+                            <h3 class="lead lead-bold">Pain Points</h3>
+                            <p>
+                                Theory-based courses don’t help with being able to put the language to use.
+                            </p>
+                            <p>
+                                Intimidating to have to use the language with a native speaker.
+                            </p>
+                            <p>
+                                Lack of options to practice industry-specific terms.
+                            </p>
+                            <p>
+                                Conversation structure is hard to grasp without a lot of practice.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">Research Synthesis</h3>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <p>
+                            Based on the interview results, I created a persona as a way to summarize common user goals
+                            and frustrations so I could keep them in mind throughout the project.
+                        </p>
+                        <p>
+                            I also began thinking
+                            about the Information Architecture of my features, and how they would fit into the app. The
+                            site map helped narrow down what I wanted to include, while the user flow gave me a more
+                            concrete idea of how certain tasks could be performed.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="row col-lg-10 p-0 justify-content-start">
+                        <div class="col-lg-5 p-0 mr-0 mr-lg-5">
+                            <h3 class="lead lead-bold mt-2">Persona</h3>
+                            <a href="images/duolingo/persona.png" data-fancybox
+                                data-caption="The persona based on target demographic.">
+                                <img src="images/duolingo-thumb/persona_sm.png"
+                                    class="data-fancybox shadow-sm figure-img img-fluid rounded"
+                                    alt="A document describing a persona.">
+                            </a>
+                        </div>
+                        <div class="col-lg-5 p-0">
+                            <h3 class="lead lead-bold mt-2">Competitor Analysis</h3>
+                            <a href="images/duolingo/competitor-research.png" data-fancybox
+                                data-caption="Analysis of Duolingo competitors.">
+                                <img src="images/duolingo-thumb/competitor-research_sm.png"
+                                    class="data-fancybox shadow-sm figure-img img-fluid rounded"
+                                    alt="Analysis of Duolingo competitors.">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Information Architecture -->
+                <div class="row d-flex justify-content-center p-3 mb-5">
+                    <div class="row col-lg-10 p-0 justify-content-start">
+                        <div class="col-lg-5 p-0 mr-0 mr-lg-5">
+                            <h3 class="lead lead-bold mt-2">Site Map</h3>
+                            <a href="images/duolingo/site-map.png" data-fancybox data-caption="Duolingo site map.">
+                                <img src="images/duolingo-thumb/site-map_sm.png"
+                                    class="data-fancybox shadow-sm figure-img img-fluid rounded"
+                                    alt="Duolingo site map.">
+                            </a>
+                        </div>
+                        <div class="col-lg-5 p-0">
+                            <h3 class="lead lead-bold mt-2">User Flow</h3>
+                            <a href="images/duolingo/user-flow.png" data-fancybox
+                                data-caption="User flow for purchasing a car insurance policy.">
+                                <img src="images/duolingo-thumb/user-flow_sm.png"
+                                    class="data-fancybox shadow-sm figure-img img-fluid rounded"
+                                    alt="User flow for purchasing a car insurance policy.">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DESIGN -->
+            <section id="design" class="container-fluid">
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="p-0 mt-5">
+                        <h1 class="">02. Design</h1>
+                        <img class="img-fluid" alt="Overlapping circles" src="images/header-circles-2.svg">
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center mt-4 px-3">
+                    <div class="col-lg-10 p-0">
+                        <p>
+                            The core challenge of this project was to make sure that any new or existing design patterns
+                            I use blend in seamlessly into the existing application. Duolingo has a very identifiable
+                            brand and descriptive design guidelines, which I referenced constantly throughout my
+                            process.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sketches -->
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">Sketches</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <p>
+                            Since I was adding a small number of new features, I sketched out a couple of screens for
+                            each one. I wanted to brainstorm how chatting with Duo or a friend would look, and note down
+                            minor additions like new achievements and shop items.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mt-3 px-3">
+                    <div class="row col-lg-10 p-0 justify-content-center">
+                        <div class="col-lg-5 my-2 my-lg-0 mr-0 mr-lg-3 d-flex justify-content-center">
+                            <a href="images/duolingo/sketch-1.png" data-fancybox
+                                data-caption="Kaus landing page sketch.">
+                                <img src="images/duolingo-thumb/sketch-1_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded" alt="Kaus landing page sketch.">
+                            </a>
+                        </div>
+                        <div class="col-lg-5 my-2 my-lg-0 d-flex justify-content-center">
+                            <a href="images/duolingo/sketch-2.png" data-fancybox
+                                data-caption="Kaus landing page sketch.">
+                                <img src="images/duolingo-thumb/sketch-2_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded" alt="Kaus landing page sketch.">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wireframes -->
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">Wireframes</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <p>
+                            Because Duolingo has a very clean interface, my wireframes were pretty close to the final
+                            look. This stage helped me work out spacing, navigation, and design patterns for the chat.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/wireframe-chat.png" data-fancybox
+                                data-caption="A wireframe of the chat homepage.">
+                                <img src="images/duolingo-thumb/wireframe-chat_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A wireframe of the chat homepage.">
+                            </a>
+                            <figcaption class="figure-caption">Chat
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/wireframe-duoduet-topics.png" data-fancybox
+                                data-caption="A wireframe of Duolingo chatbot topics.">
+                                <img src="images/duolingo-thumb/wireframe-duoduet-topics_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A wireframe of Duolingo chatbot topics.">
+                            </a>
+                            <figcaption class="figure-caption">Chatbot Topics
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/wireframe-duet-2.png" data-fancybox
+                                data-caption="A wireframe of a chatbot conversation.">
+                                <img src="images/duolingo-thumb/wireframe-duet-2_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A wireframe of a chatbot conversation.">
+                            </a>
+                            <figcaption class="figure-caption">Chatbot
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/wireframe-conversation.png" data-fancybox
+                                data-caption="A wireframe of a friend chat.">
+                                <img src="images/duolingo-thumb/wireframe-conversation_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A wireframe of a friend chat.">
+                            </a>
+                            <figcaption class="figure-caption">Friend Chat
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/wireframe-profile-achievements.png" data-fancybox
+                                data-caption="A wireframe of new Duolingo achievements.">
+                                <img src="images/duolingo-thumb/wireframe-profile-achievements_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A wireframe of new Duolingo achievements.">
+                            </a>
+                            <figcaption class="figure-caption">Achievements
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- End of wireframes -->
+
+                <!-- Style tile and UI Kit -->
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">Design Patterns</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <p>
+                            Duolingo has a very distinctive brand - the design guidelines had a lot of details about
+                            exact spacing, shades, and font styles. My style tile was a compliation of these elements.
+                        </p>
+                        <p>
+                            The UI Kit grouped the style tile with the design patterns used in the application. I
+                            ensured that the buttons, text boxes, and other elements adhered to Duolingo's design
+                            guidelines.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Style tile -->
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="lead lead-bold mt-3">Style Tile</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="row col-lg-10 p-0 justify-content-start">
+                        <div class="col-6 col-md-5 p-0">
+                            <a href="images/duolingo/style-tile-1.png" data-fancybox
+                                data-caption="Duolingo style tile.">
+                                <img src="images/duolingo-thumb/style-tile-1_sm.png"
+                                    class="data-fancybox shadow-sm figure-img img-fluid rounded"
+                                    alt="Duolingo style tile.">
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-5 p-0">
+                            <a href="images/duolingo/style-tile-2.png" data-fancybox
+                                data-caption="Duolingo style tile.">
+                                <img src="images/duolingo-thumb/style-tile-2_sm.png"
+                                    class="data-fancybox shadow-sm figure-img img-fluid rounded"
+                                    alt="Duolingo style tile.">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- UI Kit -->
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="lead lead-bold mt-3">UI Kit</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="row col-lg-10 p-0 justify-content-start">
+                        <a href="images/duolingo/ui-kit.png" data-fancybox data-caption="Duolingo UI Kit.">
+                            <img src="images/duolingo-thumb/ui-kit_sm.png"
+                                class="data-fancybox shadow-sm figure-img img-fluid rounded" alt="Duolingo UI Kit.">
+                        </a>
+                    </div>
+                </div>
+                <!-- End of Design Patterns -->
+
+                <!-- HiFi -->
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">High Fidelity Mockups</h3>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center mt-3 px-3">
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/chat.png" data-fancybox
+                                data-caption="A high-fidelity mockup of the chat homepage.">
+                                <img src="images/duolingo-thumb/chat_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of the chat homepage.">
+                            </a>
+                            <figcaption class="figure-caption">Chat
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/duet-topics.png" data-fancybox
+                                data-caption="A high-fidelity mockup of Duolingo chatbot topics.">
+                                <img src="images/duolingo-thumb/duet-topics_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of Duolingo chatbot topics.">
+                            </a>
+                            <figcaption class="figure-caption">Chatbot Topics
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/duet-chat3-record.png" data-fancybox
+                                data-caption="A high-fidelity mockup of a chatbot conversation.">
+                                <img src="images/duolingo-thumb/duet-chat3-record_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of a chatbot conversation.">
+                            </a>
+                            <figcaption class="figure-caption">Chatbot
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/friend1.png" data-fancybox
+                                data-caption="A high-fidelity mockup of a friend chat.">
+                                <img src="images/duolingo-thumb/friend1_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of a friend chat.">
+                            </a>
+                            <figcaption class="figure-caption">Friend Chat
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/profile-achievements.png" data-fancybox
+                                data-caption="A high-fidelity mockup of new Duolingo achievements.">
+                                <img src="images/duolingo-thumb/profile-achievements_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of new Duolingo achievements.">
+                            </a>
+                            <figcaption class="figure-caption">Achievements
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTING ----------------------------------------------------->
+            <section id="test" class="container-fluid mb-5">
+                <div class="row d-flex justify-content-center text-center px-3">
+                    <div class="p-0 mt-5">
+                        <h1 class="">03. Testing</h1>
+                        <img class="img-fluid" alt="Overlapping circles" src="images/header-circles-3.svg">
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center mt-3 px-3">
+                    <div class="col-lg-10 p-0">
+                        <p class="m-0">
+                            Blending new features into an existing app was complex, but through a combination of
+                            following the design guidelines and comparing my screens with existing elements, I felt my
+                            project was complete enough to put it to the test in front of some discerning users.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Prototype -->
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">Prototype</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/chat.png" data-fancybox
+                                data-caption="A high-fidelity mockup of the chat homepage.">
+                                <img src="images/duolingo-thumb/chat_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of the chat homepage.">
+                            </a>
+                            <figcaption class="figure-caption">Chat
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/duet-topics.png" data-fancybox
+                                data-caption="A high-fidelity mockup of Duolingo chatbot topics.">
+                                <img src="images/duolingo-thumb/duet-topics_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of Duolingo chatbot topics.">
+                            </a>
+                            <figcaption class="figure-caption">Chatbot Topics
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/duet-chat3-record.png" data-fancybox
+                                data-caption="A high-fidelity mockup of a chatbot conversation.">
+                                <img src="images/duolingo-thumb/duet-chat3-record_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of a chatbot conversation.">
+                            </a>
+                            <figcaption class="figure-caption">Chatbot
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                            <figure class="figure">
+                                <a href="images/duolingo/duet-chat2-incorrect.png" data-fancybox
+                                    data-caption="A high-fidelity mockup of a chatbot with an incorrect answer.">
+                                    <img src="images/duolingo-thumb/duet-chat2-incorrect_sm.png"
+                                        class="data-fancybox shadow-sm img-fluid rounded"
+                                        alt="A high-fidelity mockup of a chatbot with an incorrect answer.">
+                                </a>
+                                <figcaption class="figure-caption">Chatbot
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/friend1.png" data-fancybox
+                                data-caption="A high-fidelity mockup of a friend chat.">
+                                <img src="images/duolingo-thumb/friend1_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of a friend chat.">
+                            </a>
+                            <figcaption class="figure-caption">Friend Chat
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                            <figure class="figure">
+                                <a href="images/duolingo/friend1-words.png" data-fancybox
+                                    data-caption="A high-fidelity mockup of a chat with word suggestions.">
+                                    <img src="images/duolingo-thumb/friend1-words_sm.png"
+                                        class="data-fancybox shadow-sm img-fluid rounded"
+                                        alt="A high-fidelity mockup of a chat with word suggestions.">
+                                </a>
+                                <figcaption class="figure-caption">Friend Chat
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                        <figure class="figure">
+                            <a href="images/duolingo/profile-achievements.png" data-fancybox
+                                data-caption="A high-fidelity mockup of new Duolingo achievements.">
+                                <img src="images/duolingo-thumb/profile-achievements_sm.png"
+                                    class="data-fancybox shadow-sm img-fluid rounded"
+                                    alt="A high-fidelity mockup of new Duolingo achievements.">
+                            </a>
+                            <figcaption class="figure-caption">Achievements
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-6 col-md-4 py-3 py-lg-0 d-flex justify-content-center">
+                            <figure class="figure">
+                                <a href="images/duolingo/shop.png" data-fancybox
+                                    data-caption="A high-fidelity mockup of the Duolingo shop.">
+                                    <img src="images/duolingo-thumb/shop_sm.png"
+                                        class="data-fancybox shadow-sm img-fluid rounded"
+                                        alt="A high-fidelity mockup of the Duolingo shop.">
+                                </a>
+                                <figcaption class="figure-caption">Shop
+                                </figcaption>
+                            </figure>
+                        </div>
+                </div>
+
+                <!-- Usability Testing -->
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">Usability Testing</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="lead lead-bold">Overview</h3>
+                        <p>
+                            Users were given the following tasks:
+                            <ul>
+                                <li>
+                                    Chat with Duo the owl to complete a lesson
+                                </li>
+                                <li>
+                                    Navigate to the shop and purchase the Star Shower gift for a friend
+                                </li>
+                                <li>
+                                    Send a message to a friend, take a look at the available chat features
+                                </li>
+                            </ul>
+                            The first task introduces the biggest feature update in the app - the chatbot. It was meant
+                            to familiarize users with how this language lesson might work, the types of questions the
+                            chatbot will ask, and how to input the answers.
+                        </p>
+                        <p>
+                            The second task was brief, but allowed participants to test out navigation. Is exiting the
+                            chatbot feature straightforward? Can they find and easily purchase the item? Is the new item
+                            integrated well into the shop page?
+                        </p>
+                        <p>
+                            The final task was a comparison of a user-to-user chat and the chatbot. Testers were asked
+                            to evaluate whether sentence suggestions and the word list are useful, what they would
+                            change, and additional features they would find useful.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Next Steps -->
+                <div class="row d-flex justify-content-center px-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="mt-5">Next Steps</h3>
+                        <p>
+                            All users were happy with the final design, with only minor critiques relating more to
+                            personal preference. In order to make modifications with any confidence, I would conduct
+                            usability testing on a larger group, possibly with A/B prototypes.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center px-3 mt-3">
+                    <div class="col-lg-10 p-0">
+                        <h3 class="lead lead-bold">Further Enhancements</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center mb-5">
+
+                    <div class="col-lg-4 p-2 d-flex flex-column justify-content-lg-center text-center">
+                        <img class="img-fluid" alt="Overlapping triangles" src="images/triangle-magenta-t.svg">
+                        <div class="col-10 col-lg-12 align-self-center">
+                            <p class="py-1 m-0">
+                                Reporting function, other safety features for chatting with others.
+                            </p>
+                        </div>
+                        <img class="img-fluid mb-3" alt="Overlapping triangles" src="images/triangle-magenta-b.svg">
+                    </div>
+                    <div class="col-lg-4 p-2 d-flex flex-column justify-content-center text-center">
+                        <img class="img-fluid" alt="Overlapping triangles" src="images/triangle-blue-t.svg">
+                        <div class="col-10 col-lg-12 align-self-center">
+                            <p class="py-1 m-0">
+                                Matching with fluent language speakers, ability to indicate user's own fluent languages
+                            </p>
+                        </div>
+                        <img class="img-fluid mb-3" alt="Overlapping triangles" src="images/triangle-blue-b.svg">
+                    </div>
+                    <div class="col-lg-4 p-2 d-flex flex-column justify-content-center text-center">
+                        <img class="img-fluid" alt="Overlapping triangles" src="images/triangle-orange-t.svg">
+                        <div class="col-10 col-lg-12 align-self-center">
+                            <p class="py-1 m-0">
+                                More chat variety: different error states, career-related topics
+                            </p>
+                        </div>
+                        <img class="img-fluid mb-3" alt="Overlapping triangles" src="images/triangle-orange-b.svg">
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center align-items-center mt-3">
+                    <img class="img-fluid button-triangle" alt="Overlapping triangles"
+                        src="images/triangle-orange-r.svg">
+                    <button type="button" class="btn btn-outline-primary mx-3">
+                        <a href="https://bit.ly/2oqbCCH" target="_blank">see final prototype</a>
+                    </button>
+
+                    <img class="img-fluid button-triangle" alt="Overlapping triangles"
+                        src="images/triangle-orange-l.svg">
+                </div>
+
+            </section>
+            <!-- End of Testing section -->
+        </div>
+        <!-- End of Container -->
+    </section>
+    <!-- End of Work Section -->
+
+    <!-- Footer -->
+    <footer class="footer navbar sticky-bottom">
+        <!-- Footer Elements -->
+        <div class="container">
+            <div class=" col-md-12 pt-4 pb-2">
+                <div class="mb-2 row justify-content-center align-items-center">
+                    <div class="col-12 col-sm-4 pb-3 pb-md-0 d-flex justify-content-center justify-content-md-end">
+                        <!--Linkedin -->
+                        <a href="https://linkedin.com/in/rita-che/" target="_blank" class="footer-icon mr-4 mr-md-5">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+
+                        <!--Dribble-->
+                        <a href="https://dribbble.com/ritache" target="_blank" class="footer-icon">
+                            <i class="fab fa-dribbble fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-2 pb-3 pb-md-0 d-flex justify-content-center">
+                        <a href="about.html#contact">
+                            <button type="button" class="btn btn-outline-primary">
+                                contact me
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-4 d-flex justify-content-center justify-content-md-start">
+                        <!--Pinterest-->
+                        <a href="https://www.pinterest.ca/ritachek/" class="footer-icon mr-4 mr-md-5" target="_blank">
+                            <i class="fab fa-pinterest fa-lg"></i>
+                        </a>
+
+                        <!--Medium-->
+                        <a href="https://medium.com/@ritachekhovskaya" class="footer-icon" target="_blank">
+                            <i class="fab fa-medium-m fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <section class="container-fluid copyright d-flex justify-content-center">
+            <div class="footer-copyright text-center pb-3">Designed and coded by
+                <strong>Rita Chekhovskaya</strong>
+            </div>
+        </section>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then custom -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script> -->
+    <script type="text/javascript" src="js/portfolio.js"></script>
+</body>
+
+</html>
