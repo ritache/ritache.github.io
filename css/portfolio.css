@@ -50,6 +50,8 @@ button a,
 {
     color: #103155;
     text-decoration: none;
+    border-radius: 0%;
+    border-width: 1.5px;
 }
 
 a:hover, a:active
