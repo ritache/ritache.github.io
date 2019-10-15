@@ -35,20 +35,32 @@ section li {
 Text styles
 ------------------
 */
+
 .lead-bold {
     font-weight: 700;
     color: #E83E5B;
-  }
+}
+
+.blockquote {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.blockquote-box {
+    background-color: white;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #103155;
+}
 
 /*
 -------------------
 Links
 -------------------
 */
-a,
-button a,
-.btn-outline-primary
-{
+
+a, button a, .btn-outline-primary {
     color: #103155;
     text-decoration: none;
     font-weight: 600;
@@ -56,36 +68,43 @@ button a,
     border-width: 2px;
 }
 
-a:hover, a:active
-{
+a:hover, a:active {
     color: #E83E5B;
     text-decoration: none;
 }
 
 .btn-outline-primary {
-    border-color:  #103155;
+    border-color: #103155;
 }
 
 .btn-outline-primary:hover {
-    border-color:  #103155;
-    background:  #103155;
+    border-color: #103155;
+    background: #103155;
 }
 
 button:hover a, button a:hover, button a:active {
     color: white;
-    border-color:  #103155;
+    border-color: #103155;
     text-decoration: none;
 }
 
 #scrollTop {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 100%; /* Round */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 100%;
+    /* Round */
     width: 2em;
     height: 2em;
     background: white;
@@ -110,6 +129,7 @@ button:hover a, button a:hover, button a:active {
 Navbar
 -------------------
 */
+
 .navbar {
     background: white;
 }
@@ -135,7 +155,6 @@ Navbar
 .navbar li.active a {
     border-bottom: 3px solid #E83E5B;
 }
-
 
 /*
 -------------------
@@ -173,11 +192,11 @@ Homepage hero section
 }
 
 /* Extra small devices (phones, up to 480px) */
+
 @media screen and (max-width: 767px) {
     .heroText {
         font-size: 3em;
     }
-
     .heroSubheader {
         font-size: 1.5em;
     }
@@ -192,17 +211,19 @@ Homepage hero section
 About Page
 -------------------
 */
+
 #about {
     background-image: url("../images/cat.svg");
     background-repeat: no-repeat;
     padding-top: 70px;
-  }
+}
 
 /*
 -------------------
 Footer
 -------------------
 */
+
 .footer {
     color: white;
     background: #071626;
@@ -210,13 +231,13 @@ Footer
 }
 
 .footer .btn-outline-primary {
-    border-color:  white;
+    border-color: white;
     color: white;
 }
 
 .footer .btn-outline-primary:hover {
-    border-color:  white;
-    background:  white;
+    border-color: white;
+    background: white;
     color: #103155;
 }
 
@@ -272,6 +293,7 @@ h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4 {
 }
 
 /* Float */
+
 .hvr-float {
     display: inline-block;
     vertical-align: middle;
@@ -284,11 +306,12 @@ h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4 {
     transition-property: transform;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+}
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
-  }
+}
 
 /* Bob */
 
