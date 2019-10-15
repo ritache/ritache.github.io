@@ -1,6 +1,8 @@
 // ensure navbar doesn't cover scroll to section
 $('.anchor').click(function () {
-  var divId = $(this).attr('href');
+  
+  var anchorId = $(this).attr('href');
+  var divId = "#".concat(anchorId.split("#").pop());
   $('html, body').animate({
     scrollTop: $(divId).offset().top - 80
   }, 100);

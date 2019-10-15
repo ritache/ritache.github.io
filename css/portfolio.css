@@ -17,7 +17,7 @@ i {
     font-family: 'Courier New', Courier, monospace;
 }
 
-p {
+p, li {
     line-height: 160%;
     font-size: 18px;
 }
