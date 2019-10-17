@@ -169,6 +169,22 @@ Homepage hero section
     background-attachment: fixed;
 }
 
+/* 
+#home-hero::before {
+    content: '';
+    display: block;
+    height: 225px;
+    width: 120%;
+    transform-origin: left top;
+    left: 0;
+    top: 0;
+    background: #FFF;
+    transform: rotate(-5deg);
+    transition: transform 1.4s cubic-bezier(.77,0,.175,1).1s;
+    -webkit-transition: -webkit-transform 1.4s cubic-bezier(.77,0,.175,1).1s;
+    position: absolute;
+} */
+
 #chevron {
     margin-top: 6em;
     color: white;
