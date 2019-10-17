@@ -1,12 +1,67 @@
+body {
+  background: #f6f6f6;
+  background-attachment: fixed;
+}
+
 #chevron {
   margin-top: 5em;
   color: #103155;
+}
+
+.work-content {
+  background: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 0%;
+}
+
+.work-section {
+  border: #103155;
+  border-color: #103155;
+  border-style: dashed;
+  border-width: 0 0 2px 0;
+  padding: 0 2vh 0 2vh;
+}
+
+/* No border for last section */
+#test {
+  border-width: 0;
+}
+
+/* START Case Study Hero Section */
+
+.case-hero {
+  color: white;
+  height: 100vh;
+}
+
+.case-hero .btn-outline-primary {
+  border-color: white;
+  color: white;
+}
+
+.case-hero .btn-outline-primary:hover {
+  border-color: white;
+  background: white;
+  color: #103155;
+}
+
+.case-hero::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 150%;
+  background-image: linear-gradient(#571842, #082341, #071626);
+  background-attachment: fixed;
 }
 
 .heroImage {
   width: 60%;
   height: auto;
 }
+
+/* END Case Study Hero Section */
 
 .img-row {
   height: 100%;
@@ -24,10 +79,15 @@
   list-style-type: decimal-leading-zero;
 }
 
-div.container>section:nth-of-type(odd) {
+/* div.container>section:nth-of-type(odd) {
   background: white;
   background-size: cover;
 }
+
+div.container>section:nth-of-type(even) {
+  background: #f6f6f6;
+  background-size: cover;
+} */
 
 /* Style the Image Used to Trigger the Modal */
 
