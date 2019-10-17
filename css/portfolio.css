@@ -54,6 +54,10 @@ Text styles
     border-color: #103155;
 }
 
+.p-light {
+    font-weight: 300;
+}
+
 /*
 -------------------
 Links
