@@ -47,15 +47,19 @@ Text styles
     font-style: italic;
 }
 
-.blockquote-box {
+.dashed-box {
     background-color: white;
     border-style: dashed;
-    border-width: 2px;
+    border-width: 2px 0;
     border-color: #103155;
 }
 
-.p-light {
+.text-weight-light {
     font-weight: 300;
+}
+
+.text-16 {
+    font-size: 16px;
 }
 
 /*
@@ -124,8 +128,9 @@ button:hover a, button a:hover, button a:active {
     display: block;
 }
 
-.button-triangle {
+.button-hex {
     height: 38px;
+    width: auto;
 }
 
 /*
@@ -158,6 +163,17 @@ Navbar
 
 .navbar li.active a {
     border-bottom: 3px solid #E83E5B;
+}
+
+
+/*
+-------------------
+Special Sections
+-------------------
+*/
+.bg-blue {
+    background: #103155;
+    color: white;
 }
 
 /*
