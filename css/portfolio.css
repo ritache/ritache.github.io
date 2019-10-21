@@ -189,24 +189,41 @@ Homepage hero section
     position: absolute;
 } */
 
+.decoration {
+    position: absolute;
+}
+
+.decoration.top {
+    top: 0;
+}
+
+.decoration.right {
+    right: 0;
+}
+
+.decoration.left {
+    left: 0;
+}
+
+.decoration.bottom {
+    bottom: 0;
+}
+
 #chevron {
     margin-top: 6em;
     color: white;
 }
 
-#triangleCircle {
-    top: -20vh;
-    left: 7em;
-    position: relative;
+.home-hex-img {
+    height: 80vh;
+    width: auto;
 }
 
-#triangleSquare {
-    top: 5vh;
-    right: 7em;
-    position: relative;
+.hero-intro {
+    z-index: 100;
 }
 
-.heroText {
+.hero-text {
     font-family: 'Roboto Mono', monospace;
     font-size: 6em;
 }
@@ -214,11 +231,15 @@ Homepage hero section
 /* Extra small devices (phones, up to 480px) */
 
 @media screen and (max-width: 767px) {
-    .heroText {
+    .hero-text {
         font-size: 3em;
     }
     .heroSubheader {
         font-size: 1.5em;
+    }
+    .home-hex-img {
+        height: auto;
+        width: 20vw;
     }
 }
 
