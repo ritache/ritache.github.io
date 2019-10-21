@@ -19,7 +19,7 @@ i {
 
 p, li {
     line-height: 160%;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 ul {
@@ -169,7 +169,7 @@ Homepage hero section
 #home-hero {
     height: 100vh;
     color: white;
-    background-image: linear-gradient(#571842, #082341, #071626);
+    background: linear-gradient(#103155, #071626);
     background-attachment: fixed;
 }
 
@@ -247,7 +247,6 @@ Footer
 .footer {
     color: white;
     background: #071626;
-    /* background-image: linear-gradient(to right, #071626,  #571842 , #071626); */
 }
 
 .footer .btn-outline-primary {
