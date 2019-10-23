@@ -171,9 +171,19 @@ Navbar
 Special Sections
 -------------------
 */
+
+.card {
+    border-color: #103155;
+    border-width: 1.5px;
+}
+
 .bg-blue {
     background: #103155;
     color: white;
+}
+
+.home-work {
+    padding: 7vh 0;
 }
 
 /*
@@ -246,7 +256,7 @@ Homepage hero section
 
 /* Extra small devices (phones, up to 480px) */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 700px) {
     .hero-text {
         font-size: 3em;
     }
@@ -257,11 +267,83 @@ Homepage hero section
         height: auto;
         width: 20vw;
     }
+    .heroImage {
+        width: 100%;
+    }
 }
 
+/*
+-------------------
+CASE STUDIES
+-------------------
+*/
+
 .work-section {
-    padding: 7vh 0;
+    border: #103155;
+    border-color: #103155;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    padding: 0 2vh 0 2vh;
 }
+
+.work-content {
+    background: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 0%;
+  }
+  
+  /* No border for last section */
+  #test {
+    border-width: 0;
+  }
+  
+  /* START Case Study Hero Section */
+  
+  .case-hero {
+    color: white;
+    height: 100vh;
+  }
+  
+  .case-hero .btn-outline-primary {
+    border-color: white;
+    color: white;
+  }
+  
+  .case-hero .btn-outline-primary:hover {
+    border-color: white;
+    background: white;
+    color: #103155;
+  }
+  
+  .case-hero::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 150%;
+    background-image: linear-gradient(#103155, #071626);
+    background-attachment: fixed;
+  }
+  
+  .heroImage {
+    width: 60%;
+    height: auto;
+  }
+  
+  /* END Case Study Hero Section */
+  
+  .img-row {
+    height: 100%;
+  }
+  
+  .index-triangle {
+    height: 100%;
+  }
+  
+  .case-index {
+    list-style-type: decimal-leading-zero;
+  }
 
 /*
 -------------------
