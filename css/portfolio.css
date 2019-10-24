@@ -186,6 +186,11 @@ Special Sections
     padding: 7vh 0;
 }
 
+.img-separator {
+    height: auto;
+    width: 20vw;
+}
+
 /*
 -------------------
 Homepage hero section
@@ -269,6 +274,9 @@ Homepage hero section
     }
     .heroImage {
         width: 100%;
+    }
+    .img-separator {
+        width: 40vw;
     }
 }
 

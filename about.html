@@ -53,81 +53,83 @@
     </button>
 
     <!--Start of about-->
-    <section class="container-fluid">
-        <div id="about" class="container col-10 col-lg-7 col-xl-5 mt-5">
-            <h2 class="pb-2">Hi, I'm Rita!</h2>
-            <p>
-                I'm a UX/UI designer based in Toronto. My passion is to create products that are not
-                only
-                engaging to users, but also to the teams which build, design, and shape the entirety of
-                the
-                experience.
-            </p>
+    <section id="work" class="container-fluid">
+        <div class="work-content container d-flex flex-column justify-content-center col-10 col-xl-8 p-5">
+            <section class="container-fluid">
+                <div id="about" class="container">
+                    <h2 class="pb-2">Hi, I'm Rita!</h2>
+                    <p>
+                        I'm a UX/UI designer based in Toronto. My passion is to create products that are not
+                        only
+                        engaging to users, but also to the teams which build, design, and shape the entirety of
+                        the
+                        experience.
+                    </p>
 
-            <p>
-                Being a developer in a previous life, I’m very familiar with the expectations and
-                limitations of coding a piece of software. A position in UX gives me the opportunity to
-                blend this knowledge with my love of design and collaborate with the engineering team
-                using
-                the same language (programming or otherwise).
-            </p>
+                    <p>
+                        I believe that a cohesive, well-organized UX is vital to the success and evolution of a
+                        project. Being a developer in a previous life, I’m very familiar with the expectations and
+                        limitations of coding a piece of software. A position in UX gives me the opportunity to
+                        blend this knowledge with my love of design and collaborate with the engineering team
+                        using
+                        the same language (programming or otherwise).
+                    </p>
 
-            <p>
-                I believe that a cohesive, well-organized UX is vital to the success and evolution of a
-                project. When everyone knows what makes the personas tick, when engineers can find the
-                CSS
-                for that tricky gradient, and designers think putting together a mockup is a breeze with
-                the
-                pattern library, that’s when I know that I’ve done good work as a UX designer.
-            </p>
+                    <p>
+                        In my free time I pursue personal illustration projects, play video games, and help my
+                        cat
+                        down from really high shelves.
+                    </p>
 
-            <p>
-                In my free time I pursue personal illustration projects, play video games, and help my
-                cat
-                down from really high shelves.
-            </p>
+                    <p>
+                        If you think I’d be a good fit for your team, or simply want to chat about UX, don’t
+                        hesitate to reach out!
+                    </p>
+                </div>
+            </section>
 
-            <p>
-                If you think I’d be a good fit for your team, or simply want to chat about UX, don’t
-                hesitate to reach out!
-            </p>
+            <section class="container-fluid d-flex justify-content-center mt-5">
+                <img src="images/hex-separator.svg" alt="Geometric separator" class="img-separator">
+            </section>
+
+            <!--Start of contact-->
+            <section id="contact" class="container-fluid">
+                <div class="containers">
+                    <div class="row d-flex justify-content-start my-5">
+                        <form id="emailForm" action="https://usebasin.com/f/7ad3fb92337c"
+                            class="col-12 d-flex flex-column" method="POST">
+                            <h2 class="pb-2">Contact Me</h2>
+                            <div class="form-group">
+                                <label>Name *</label>
+                                <input name="first_name" type="text" placeholder="Your name" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input name="email" type="text" placeholder="Your email address" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Subject *</label>
+                                <input name="subject" type="text" placeholder="Email subject" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Message *</label>
+                                <textarea name="message" type="text" placeholder="Your message"
+                                    class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary align-self-end">
+                                submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </section>
 
-    <!--Start of contact-->
-    <section id="contact" class="container-fluid">
-        <div class="container col-10 col-lg-7 col-xl-5">
-            <div class="row d-flex justify-content-start my-5">
-                <form id="emailForm" action="https://usebasin.com/f/7ad3fb92337c" class="col-12 d-flex flex-column"
-                    method="POST">
-                    <h2 class="pb-2">Contact Me</h2>
-                    <div class="form-group">
-                        <label>Name *</label>
-                        <input name="first_name" type="text" placeholder="Your name" class="form-control" />
-                    </div>
 
-                    <div class="form-group">
-                        <label>Email *</label>
-                        <input name="email" type="text" placeholder="Your email address" class="form-control" />
-                    </div>
-
-                    <div class="form-group">
-                        <label>Subject *</label>
-                        <input name="subject" type="text" placeholder="Email subject" class="form-control" />
-                    </div>
-
-                    <div class="form-group">
-                        <label>Message *</label>
-                        <textarea name="message" type="text" placeholder="Your message" class="form-control"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-outline-primary align-self-end">
-                        submit
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-    
 
     <!-- Footer -->
     <footer class="footer navbar sticky-bottom">
