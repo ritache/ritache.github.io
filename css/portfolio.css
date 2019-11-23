@@ -1,6 +1,5 @@
 html, body {
-    width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 html {
@@ -165,6 +164,19 @@ Navbar
     border-bottom: 3px solid #E83E5B;
 }
 
+/*
+-------------------
+Utility
+-------------------
+*/
+.no-space-children > * {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.width-100 {
+    width: 100%;
+}
 
 /*
 -------------------
@@ -179,7 +191,7 @@ Special Sections
 }
 
 .card-header {
-   border-radius: 0!important;
+    border-radius: 0!important;
 }
 
 .bg-blue {
@@ -264,8 +276,8 @@ Homepage hero section
     font-size: 6em;
 }
 
-
 /* Extra large devices  */
+
 @media screen and (min-width: 2000px) {
     .hero-text {
         font-size: 3em;
@@ -273,6 +285,7 @@ Homepage hero section
 }
 
 /* Extra small devices (phones, up to 480px) */
+
 @media screen and (max-width: 700px) {
     .hero-text {
         font-size: 3em;
@@ -294,6 +307,47 @@ Homepage hero section
 
 /*
 -------------------
+ILLUSTRATIONS
+-------------------
+*/
+
+.nav-pills {
+    position: relative;
+    z-index: 1;
+    margin-right: -1rem;
+    margin-bottom: -20px;
+    margin-left: -1rem;
+    background-color: #071626;
+    border: 0;
+    border-radius: 0!important;
+}
+
+.nav-pills .nav-item {
+    padding: 0;
+}
+
+.nav-pills > * > .nav-link, .nav-pills .nav-link.active {
+    padding: 1rem;
+    background-color: transparent;
+    border-radius: 0!important;
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    color: #E83E5B;
+    border-bottom: 3px solid #E83E5B;
+}
+
+.tab-content {
+    border: 0;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.25)!important;
+}
+
+/*
+-------------------
 CASE STUDIES
 -------------------
 */
@@ -310,32 +364,33 @@ CASE STUDIES
     background: white;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     padding: 0%;
-  }
-  
-  /* No border for last section */
-  #test {
+}
+
+/* No border for last section */
+
+#test {
     border-width: 0;
-  }
-  
-  /* START Case Study Hero Section */
-  
-  .case-hero {
+}
+
+/* START Case Study Hero Section */
+
+.case-hero {
     color: white;
     height: 100vh;
-  }
-  
-  .case-hero .btn-outline-primary {
+}
+
+.case-hero .btn-outline-primary {
     border-color: white;
     color: white;
-  }
-  
-  .case-hero .btn-outline-primary:hover {
+}
+
+.case-hero .btn-outline-primary:hover {
     border-color: white;
     background: white;
     color: #103155;
-  }
-  
-  .case-hero::before {
+}
+
+.case-hero::before {
     content: '';
     z-index: -1;
     position: absolute;
@@ -344,26 +399,26 @@ CASE STUDIES
     height: 150%;
     background-image: linear-gradient(#103155, #071626);
     background-attachment: fixed;
-  }
-  
-  .heroImage {
+}
+
+.heroImage {
     width: 60%;
     height: auto;
-  }
-  
-  /* END Case Study Hero Section */
-  
-  .img-row {
+}
+
+/* END Case Study Hero Section */
+
+.img-row {
     height: 100%;
-  }
-  
-  .index-triangle {
+}
+
+.index-triangle {
     height: 100%;
-  }
-  
-  .case-index {
+}
+
+.case-index {
     list-style-type: decimal-leading-zero;
-  }
+}
 
 /*
 -------------------
@@ -384,6 +439,8 @@ Footer
 */
 
 .footer {
+    bottom: 0;
+    width: 100%;
     color: white;
     background: #071626;
 }
