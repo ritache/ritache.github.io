@@ -333,6 +333,10 @@ ILLUSTRATIONS
     color: white;
 }
 
+.nav-pills .nav-link {
+    border-bottom: 3px solid transparent;
+}
+
 .nav-pills .nav-link.active {
     color: #E83E5B;
     border-bottom: 3px solid #E83E5B;
