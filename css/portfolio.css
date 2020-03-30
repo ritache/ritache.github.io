@@ -276,34 +276,7 @@ Homepage hero section
     font-size: 6em;
 }
 
-/* Extra large devices  */
 
-@media screen and (min-width: 2000px) {
-    .hero-text {
-        font-size: 3em;
-    }
-}
-
-/* Extra small devices (phones, up to 480px) */
-
-@media screen and (max-width: 700px) {
-    .hero-text {
-        font-size: 3em;
-    }
-    .heroSubheader {
-        font-size: 1.5em;
-    }
-    .home-hex-img {
-        height: auto;
-        width: 20vw;
-    }
-    .heroImage {
-        width: 100%;
-    }
-    .img-separator {
-        width: 40vw;
-    }
-}
 
 /*
 -------------------
@@ -463,6 +436,41 @@ Footer
 
 .footer-icon {
     color: white;
+}
+
+/*
+-------------------
+Media
+-------------------
+*/
+
+/* Extra large devices  */
+
+@media screen and (min-width: 2000px) {
+    .hero-text {
+        font-size: 3em;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+
+@media screen and (max-width: 700px) {
+    .hero-text {
+        font-size: 3em;
+    }
+    .heroSubheader {
+        font-size: 1.5em;
+    }
+    .home-hex-img {
+        height: auto;
+        width: 20vw;
+    }
+    .heroImage {
+        width: 100%;
+    }
+    .img-separator {
+        width: 40vw;
+    }
 }
 
 /*
