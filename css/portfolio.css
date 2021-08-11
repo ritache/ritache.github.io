@@ -18,7 +18,7 @@ i {
 
 p, li {
     line-height: 160%;
-    font-size: 17px;
+    font-size: 1.25rem;
 }
 
 ul {
@@ -27,6 +27,19 @@ ul {
 
 section li {
     padding: 0.5em 0em;
+}
+
+h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /* 
@@ -203,6 +216,11 @@ Special Sections
     padding: 7vh 0;
 }
 
+#illustrations {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
 .img-separator {
     height: auto;
     width: 20vw;
@@ -273,7 +291,7 @@ Homepage hero section
 
 .hero-text {
     font-family: 'Roboto Mono', monospace;
-    font-size: 6em;
+    font-size: 6rem;
 }
 
 
@@ -444,20 +462,13 @@ Media
 -------------------
 */
 
-/* Extra large devices  */
-@media screen and (min-width: 2000px) {
-    .hero-text {
-        font-size: 3em;
-    }
-}
-
 /* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .hero-text {
-        font-size: 3em;
+        font-size: 3rem;
     }
     .heroSubheader {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
     .home-hex-img {
         height: auto;
@@ -512,14 +523,6 @@ Animations
 
 .navbar .navbar-toggler-icon {
     background-image: url(../images/icons/menu.svg);
-}
-
-h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4 {
-    font-family: 'Roboto Mono', monospace;
-}
-
-h4 {
-    font-size: 1.2rem;
 }
 
 /* Float */
@@ -613,3 +616,4 @@ h4 {
     -webkit-animation-direction: normal, alternate;
     animation-direction: normal, alternate;
 }
+
