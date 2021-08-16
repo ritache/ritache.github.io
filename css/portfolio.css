@@ -48,11 +48,6 @@ Text styles
 ------------------
 */
 
-.lead-bold {
-    font-weight: 700;
-    color: #E83E5B;
-}
-
 .blockquote {
     font-size: 24px;
     font-weight: 500;
