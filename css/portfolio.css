@@ -1,3 +1,8 @@
+:root {
+    --main-color:#071626;
+    --background-color: #f6f6f6:
+}
+
 html, body {
     min-height: 100vh;
 }
@@ -8,8 +13,8 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #103155;
-    background-color: #f6f6f6;
+    color: var(--main-color);
+    background-color: var(--background-color);
 }
 
 i {
@@ -63,7 +68,7 @@ Text styles
     background-color: white;
     border-style: dashed;
     border-width: 2px 0;
-    border-color: #103155;
+    border-color: var(--main-color);
 }
 
 .text-weight-light {
@@ -80,8 +85,13 @@ Links
 -------------------
 */
 
+.article-link:hover {
+color: var(--main-color);
+    text-decoration:none;
+}
+
 a, button a, .btn-outline-primary {
-    color: #103155;
+    color: var(--main-color);
     text-decoration: none;
     font-weight: 600;
     border-radius: 0%;
@@ -94,17 +104,17 @@ a:hover, a:active {
 }
 
 .btn-outline-primary {
-    border-color: #103155;
+    border-color: var(--main-color);
 }
 
 .btn-outline-primary:hover {
-    border-color: #103155;
-    background: #103155;
+    border-color: var(--main-color);
+    background: var(--main-color);
 }
 
 button:hover a, button a:hover, button a:active {
     color: white;
-    border-color: #103155;
+    border-color: var(--main-color);
     text-decoration: none;
 }
 
@@ -156,7 +166,7 @@ Navbar
 }
 
 #logo {
-    fill: #103155;
+    fill: var(--main-color);
 }
 
 #logo:hover {
@@ -166,7 +176,7 @@ Navbar
 .navbar li a {
     border-bottom: 3px solid transparent;
     font-family: 'Roboto Mono', monospace;
-    color: #103155;
+    color: var(--main-color);
     letter-spacing: 0.1em;
     font-size: 1.1em;
     font-weight: 700;
@@ -191,6 +201,69 @@ Utility
     width: 100%;
 }
 
+
+/*
+-------------------
+Articles
+-------------------
+*/
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 3px;
+}
+
+/* article hover pointer*/
+article a::after {
+  inset-block: 0;
+  inset-inline: 0;
+  position: absolute;
+  cursor: pointer;
+  content: "";
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  color: var(--main-color);
+  cursor: pointer;
+  box-shadow: 0.3em 0.3em;
+}
+
+article p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+article a {
+  color: #3A4B5F;
+  font-style: italic;
+}
+
 /*
 -------------------
 Special Sections
@@ -198,7 +271,7 @@ Special Sections
 */
 
 .card {
-    border-color: #103155;
+    border-color: var(--main-color);
     border-width: 1.5px;
     border-radius: 0%;
 }
@@ -208,12 +281,12 @@ Special Sections
 }
 
 .bg-blue {
-    background: #103155;
+    background: var(--main-color);
     color: white;
 }
 
 .home-work {
-    padding: 7vh 0;
+    padding: 2vh 2vh 0vh 2vh;
 }
 
 #illustrations {
@@ -236,8 +309,13 @@ Homepage hero section
 #home-hero {
     height: 100vh;
     color: white;
-    background: linear-gradient(#103155, #071626);
+    background: linear-gradient(#103155, var(--main-color));
     background-attachment: fixed;
+    /*
+    diagonal section
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    */
 }
 
 /* 
@@ -277,7 +355,8 @@ Homepage hero section
 }
 
 #chevron {
-    margin-top: 6em;
+    margin-top: 4em;
+    padding: 24px;
     color: white;
 }
 
@@ -309,7 +388,7 @@ ILLUSTRATIONS
     margin-right: -1rem;
     margin-bottom: -20px;
     margin-left: -1rem;
-    background-color: #071626;
+    background-color: var(--main-color);
     border: 0;
     border-radius: 0!important;
 }
@@ -350,8 +429,8 @@ CASE STUDIES
 */
 
 .work-section {
-    border: #103155;
-    border-color: #103155;
+    border: var(--main-color);
+    border-color: var(--main-color);
     border-style: dashed;
     border-width: 0 0 2px 0;
     padding: 0 2vh 0 2vh;
@@ -384,7 +463,7 @@ CASE STUDIES
 .case-hero .btn-outline-primary:hover {
     border-color: white;
     background: white;
-    color: #103155;
+    color: var(--main-color);
 }
 
 .case-hero::before {
@@ -394,7 +473,7 @@ CASE STUDIES
     left: 0;
     right: 0;
     height: 150%;
-    background-image: linear-gradient(#103155, #071626);
+    background-image: linear-gradient(#103155, var(--main-color));
     background-attachment: fixed;
 }
 
@@ -439,7 +518,7 @@ Footer
     bottom: 0;
     width: 100%;
     color: white;
-    background: #071626;
+    background: var(--main-color);
 }
 
 .footer .btn-outline-primary {
@@ -450,7 +529,7 @@ Footer
 .footer .btn-outline-primary:hover {
     border-color: white;
     background: white;
-    color: #103155;
+    color: var(--main-color);
 }
 
 .footer-icon {
